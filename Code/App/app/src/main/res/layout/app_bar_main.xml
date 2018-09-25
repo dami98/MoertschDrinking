@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey85"
+            >
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:menu_icon="@drawable/ic_baseline_add_white_24px"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+    >
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_todo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_check_24px"
+                app:fab_colorNormal="@color/yellowMain"
+                app:fab_colorPressed="@color/yellowDark"
+                app:fab_size="mini"
+                app:fab_label="@string/todo" />
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_event_24px"
+                app:fab_colorNormal="@color/pinkMain"
+                app:fab_colorPressed="@color/pinkDark"
+                app:fab_size="mini"
+                app:fab_label="@string/event" />
+
+        <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menu_item_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_create_24px"
+                app:fab_colorNormal="@color/blueMain"
+                app:fab_colorPressed="@color/blueDark"
+                app:fab_size="mini"
+                app:fab_label="@string/note" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/taskToDo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Moertsch mich"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/taskToDo"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            android:paddingTop="20dp" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

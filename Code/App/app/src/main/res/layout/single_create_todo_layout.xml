@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:weightSum="10"
+>
+    
+    <TextView
+            android:id="@+id/todoLayoutText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="TodoText"
+            android:layout_weight="9"
+            android:layout_margin="@dimen/item_margin"
+            android:gravity="center_vertical"
+    />
+
+    <ImageButton
+            android:id="@+id/todoLayoutDeleteButton"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_close_24px"
+            android:contentDescription="Erinnerung Löschen"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_margin="@dimen/item_margin"
+    />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueBright"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/mini_entity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Entity"
+        android:textSize="@dimen/mini_entity_title"
+        />
+
+    <TextView
+        android:id="@+id/mini_entity_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:text="Entity Description"
+        android:textSize="@dimen/mini_entity_description"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>
